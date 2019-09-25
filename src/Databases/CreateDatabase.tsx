@@ -10,7 +10,7 @@ export default () => {
             <h5 className="modal-title">Create database</h5>
             <p>Yeah, do that</p>
           </div>
-          <div class="modal-footer">
+          <div className="modal-footer">
             <button type="button" className="btn btn-primary">
               Save changes
             </button>
