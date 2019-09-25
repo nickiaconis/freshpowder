@@ -5,6 +5,7 @@ import {
   Switch,
   NavLink
 } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
 
 import { MemoizedDatabasesList } from "./DatabasesList";
 const DatabasesCreate = lazy(() => import("../Databases/CreateDatabase"));
@@ -13,14 +14,14 @@ const DatabasesCreate = lazy(() => import("../Databases/CreateDatabase"));
  * Primary renderer
  */
 
-export default function() {
+export default function Databases() {
   return (
     <>
       <Router>
-        <h1>Databases</h1>
+        <h1><FormattedMessage id="Databases" /></h1>
         <div className="my-3">
           <NavLink to="/databases/create" className="btn btn-primary">
-            Create Database
+            <FormattedMessage id="Create Database" />
           </NavLink>
         </div>
         <Route path="/databases/create" component={DatabasesCreate} />
