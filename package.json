@@ -6,7 +6,7 @@
     "start": "ws --spa index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --mode=development -w",
-    "extract-messages": "NODE_ENV=production babel ./src  --out-file ./build/messages"
+    "extract-messages": "NODE_ENV=production babel ./src/**/*.*  --out-file /dev/null"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +25,8 @@
   "devDependencies": {
     "@babel/cli": "^7.6.2",
     "@babel/core": "^7.6.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
     "babel-plugin-react-intl": "^4.1.19",
     "local-web-server": "^3.0.7",
     "ts-loader": "^6.0.4",

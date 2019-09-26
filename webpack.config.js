@@ -20,7 +20,18 @@ module.exports = {
         test: /\.tsx?$/,
         loader: "ts-loader",
         exclude: /node_modules/
-      }
+      },
+{ test: /\.js$/,
+  loader: 'babel-loader',
+  query: {
+    // react needed for JSX syntax
+    // es2015 needed for modules
+    presets: ['react', 'es2015'],
+    plugins: ['react-intl'],
+    cacheDirectory: true
+  },
+  exclude: /node_modules|bower_components/
+}
     ]
   },
   resolve: {
