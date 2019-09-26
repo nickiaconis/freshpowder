@@ -5,6 +5,7 @@
         "@babel/plugin-transform-react-jsx",
         [ "react-intl", {
             "messagesDir": "./build/messages",
+            "enforceDefaultMessage": false
         }]
     ]
 }
