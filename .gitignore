@@ -1,4 +1,6 @@
-dist
+build
+dist/*
+!dist/messages
 node_modules
 .DS_Store
 npm-debug.log
